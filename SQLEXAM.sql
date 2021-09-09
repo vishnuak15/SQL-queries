@@ -68,3 +68,7 @@ select *from Employee
 group by salary 
 order by  salary desc limit 1,1;
 
+-- Find the total salary of the department. 
+select deparment_id,sum(salary)
+from Employee
+group by deparment_id;

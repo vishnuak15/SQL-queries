@@ -62,3 +62,9 @@ INSERT INTO Employee VALUES (10,5,'Jithin',7184858,2000);
 select *
 from Employee
 group by deparment_id;
+
+-- Write a query for getting second highest salary.
+select *from Employee 
+group by salary 
+order by  salary desc limit 1,1;
+
